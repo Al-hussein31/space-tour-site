@@ -4,7 +4,7 @@
   "description": "Space Tourism Website",
   "scripts": {
     "start": "parcel starter-code/index.html",
-    "build": "parcel build starter-code/index.html "
+    "build": "parcel build ./index.html "
   },
   "author": "Hussein Yahaya",
   "license": "ISC",
