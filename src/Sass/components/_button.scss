@@ -1,0 +1,118 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    width: 31rem;
+    height: 30rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+    padding: 13rem;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 40%;
+    top: 20%;
+    cursor: pointer;
+    @media only screen and (max-width: $bp-largest) {
+      top: 10%;
+      margin-left: -10rem;
+    }
+
+    @media only screen and (max-width: $bp-mid) {
+      margin-top: 30rem;
+      width: 41rem;
+      height: 40rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 31rem;
+      height: 30rem;
+    }
+    @media only screen and (max-width: $bp-bit) {
+      margin-left: -13rem;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    &::after {
+      transform: scaleX(1.6) scaleY(1.6);
+      opacity: 0.1036;
+    }
+  }
+  &:active,
+  &:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+  &--white {
+    background-color: var(--color-primary);
+
+    &::after {
+      background-color: var(--color-primary);
+    }
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+
+    @media only screen and (max-width: $bp-mid) {
+      width: 41rem;
+      height: 40rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 31rem;
+      height: 30rem;
+    }
+  }
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
+.dots {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  transform: translateX(-50%);
+  display: flex;
+
+  @media only screen and (max-width: $bp-mid) {
+    bottom: 47%;
+    left: 50%;
+  }
+
+  &__dot {
+    border: none;
+    background-color: var(--color-primary-2);
+    opacity: 0.7;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-right: 1.75rem;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &--active {
+      background-color: var(--color-primary);
+      /* background-color: #888; */
+      opacity: 1;
+    }
+    /* Only necessary when overlying images */
+    /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.header {
+  background: url(../../Images/home/background-home-desktop.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  @media only screen and (max-width: $bp-mid) {
+    background: url(../../Images/home/background-home-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  @media only screen and (max-width: $bp-bit) {
+    background: url(../../Images/home/background-home-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+}
+
+.header-destination {
+  background: url(../../Images/destination/background-destination-desktop.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  @media only screen and (max-width: $bp-mid) {
+    background: url(../../Images/destination/background-destination-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  @media only screen and (max-width: $bp-bit) {
+    background: url(../../Images/destination/background-destination-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+}
+.header-crew {
+  background: url(../../Images/crew/background-crew-desktop.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  @media only screen and (max-width: $bp-mid) {
+    background: url(../../Images/crew/background-crew-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    background: url(../../Images/crew/background-crew-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+}
+
+.header-technology {
+  background: url(../../Images/technology/background-technology-desktop.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  @media only screen and (max-width: $bp-mid) {
+    background: url(../../Images/technology/background-technology-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  @media only screen and (max-width: $bp-bit) {
+    background: url(../../Images/technology/background-technology-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+}

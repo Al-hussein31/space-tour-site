@@ -1,0 +1,186 @@
+body {
+  // font-family: "Lato" sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+}
+
+.header-primary {
+  color: var(--color-primary);
+  font-family: $font-secondary;
+  font-size: 10rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  position: relative;
+  backface-visibility: hidden;
+  display: block;
+  left: 10%;
+  @media only screen and (max-width: $bp-large) {
+    text-align: center;
+  }
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
+
+.header-secondary {
+  color: var(--color-primary-2);
+  font-family: $font-primary;
+  font-size: 2.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  left: 10%;
+  top: 20%;
+  @media only screen and (max-width: $bp-large) {
+    text-align: center;
+  }
+  @media only screen and (max-width: $bp-small) {
+    margin-top: -8rem;
+  }
+}
+
+.header-secondary-2 {
+  color: var(--color-primary-2);
+  font-family: $font-primary;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  top: -300%;
+  left: 2.5%;
+  @media only screen and (max-width: $bp-largest-1) {
+    left: 2%;
+    top: -500%;
+  }
+  @media only screen and (max-width: $bp-mid) {
+    margin-top: 0rem;
+    left: -10%;
+    width: 55vw;
+    top: -100;
+  }
+  @media only screen and (max-width: $bp-small) {
+    width: 70vw;
+    text-align: center;
+    left: -5%;
+  }
+
+  &:hover {
+    transform: skewY(-1deg) skewX(15deg) scaleY(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+  &-num {
+    color: var(--color-primary);
+    font-family: $font-primary;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    opacity: 0.25;
+  }
+  &-text {
+    color: var(--color-primary);
+    font-family: $font-primary;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+  }
+}
+.paragraph {
+  color: var(--color-primary-2);
+  font-family: $font-primary;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  text-align: start;
+  position: relative;
+  left: 10%;
+  @media only screen and (max-width: $bp-largest-1) {
+    line-height: 3rem;
+  }
+  @media only screen and (max-width: $bp-large) {
+    text-align: center;
+  }
+}
+
+.main--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.numbers {
+  display: flex;
+  position: relative;
+  left: 8%;
+  @media only screen and (max-width: $bp-mid) {
+    left: 10%;
+  }
+  @media only screen and (max-width: $bp-small) {
+    left: 2%;
+  }
+
+  &--text {
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    color: var(--color-primary-2);
+    text-align: center;
+    font-family: Bellefair;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-decoration: none;
+    @media only screen and (max-width: $bp-mid) {
+      &:not(:first-child) {
+        margin-left: 4rem;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    &:hover {
+      background-color: var(--color-primary);
+      border: 2px solid orangered;
+      opacity: 0.5;
+      color: black;
+      transition: all 0.3s;
+    }
+  }
+  &-active {
+    background-color: var(--color-primary);
+    color: black;
+    border-radius: 50%;
+    opacity: 1;
+    &:hover {
+      background-color: var(--color-primary);
+      color: black;
+      border-radius: 50%;
+      opacity: 1;
+    }
+  }
+}

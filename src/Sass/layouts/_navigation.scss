@@ -1,0 +1,211 @@
+.nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+  &-icon {
+    padding: 2rem;
+    margin-top: 0.6rem;
+
+    @media only screen and (max-width: $bp-mid) {
+      padding: 0.9rem;
+      margin-left: 1.5rem;
+      margin-top: 0.4rem;
+    }
+  }
+  &__checkbox {
+    display: none;
+  }
+
+  &__icon {
+    display: none;
+    @media only screen and (max-width: $bp-bit) {
+      position: relative;
+      margin-top: 3.5rem;
+      display: block;
+      &,
+      &::after,
+      &::before {
+        width: 3rem;
+        height: 2px;
+        background-color: var(--color-primary);
+        display: inline-block;
+        transition: all 0.2s;
+        left: 80%;
+      }
+
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+      }
+
+      &::before {
+        top: -0.9rem;
+      }
+      &::after {
+        top: 1rem;
+      }
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media only screen and (max-width: $bp-bit) {
+      // background-color: $color-white;
+      display: block;
+      height: 7rem;
+      width: 7rem;
+      position: fixed;
+      top: 2rem;
+      right: 8rem;
+      // border-radius: 50%;
+      z-index: 2000;
+      // box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+  &__elements {
+    &-line {
+      position: relative;
+      width: 35vw;
+      top: 50%;
+      left: -63%;
+      height: 1px;
+      opacity: 0.2515;
+      background: var(--color-primary);
+      z-index: 10;
+      @media only screen and (max-width: $bp-largest) {
+        width: 23vw;
+      }
+
+      @media only screen and (max-width: $bp-mid) {
+        display: none;
+      }
+    }
+  }
+
+  &__links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    background: var(--color-primary-1);
+    backdrop-filter: blur(40.774227142333984px);
+    text-align: center;
+    align-content: center;
+    position: relative;
+    left: -63%;
+    top: 15%;
+    min-width: 55vw;
+
+    min-height: 10rem;
+    height: 8rem;
+    @media only screen and (max-width: $bp-largest) {
+      min-width: 67vw;
+      left: -99%;
+    }
+    @media only screen and (max-width: $bp-mid) {
+      top: 0%;
+      left: -40%;
+      min-width: 70vw;
+      grid-template-columns: 60px repeat(auto-fit, minmax(5rem, 1fr));
+    }
+    @media only screen and (max-width: $bp-bit) {
+      grid-template-columns: 4fr;
+      grid-template-rows: repeat(4, 50px);
+      left: 50%;
+      top: 0%;
+      min-width: 50vw;
+      min-height: 100vh;
+      position: absolute;
+      z-index: 20;
+      opacity: 0;
+      transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    }
+
+    &-link {
+      min-height: 10rem;
+      min-width: none;
+      width: 8rem;
+      position: relative;
+      left: 20%;
+      display: grid;
+      text-align: center;
+      grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+      &:hover {
+        border-bottom: 3px solid var(--color-primary-1-hover);
+        transition: all 0.3s;
+      }
+      @media only screen and (max-width: $bp-large) {
+        left: 12%;
+        width: 7rem;
+      }
+
+      @media only screen and (max-width: $bp-bit) {
+        top: -500%;
+        width: 10rem;
+        min-height: 6rem;
+      }
+      &--active {
+        border-bottom: 3px solid var(--color-primary);
+        &:hover {
+          border-bottom: 3px solid var(--color-primary);
+        }
+      }
+      &-num {
+        color: var(--color-primary);
+        font-family: $font-primary;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2.7px;
+        text-decoration: none;
+        position: relative;
+        top: 35%;
+      }
+      &-text {
+        color: var(--color-primary);
+        font-family: $font-primary;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 2.7px;
+        text-decoration: none;
+        position: relative;
+        top: 35%;
+        @media only screen and (max-width: $bp-mid) {
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+
+  &__checkbox:checked ~ &__links {
+    opacity: 1;
+  }
+
+  &__button:hover &__icon::before {
+    top: -1rem;
+  }
+  &__button:hover &__icon::after {
+    top: 1rem;
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    transform: rotate(135deg);
+    top: 0;
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    transform: rotate(-135deg);
+    top: 0;
+  }
+}

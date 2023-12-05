@@ -1,0 +1,103 @@
+.technology {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  &__texts {
+    &-numbers {
+      @media only screen and (max-width: $bp-largest) {
+        margin-top: -10rem;
+      }
+      @media only screen and (max-width: $bp-mid) {
+        display: flex;
+        position: relative;
+        left: 20%;
+        // top: 100%;
+        margin-top: 30rem;
+      }
+    }
+    &-text {
+      &-head {
+        color: var(--color-primary);
+        font-family: $font-secondary;
+        font-size: 6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        position: absolute;
+        top: 44%;
+        left: 18%;
+        @media only screen and (max-width: $bp-largest) {
+          top: 48%;
+        }
+        @media only screen and (max-width: $bp-mid) {
+          top: 65%;
+          width: 65vw;
+          text-align: center;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+          text-align: center;
+          font-size: 4rem;
+        }
+      }
+      &-subhead {
+        position: absolute;
+        color: var(--color-primary-2);
+        font-family: Barlow Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.7px;
+        top: 40%;
+        left: 18%;
+
+        @media only screen and (max-width: $bp-mid) {
+          top: 58%;
+          width: 65vw;
+          text-align: center;
+        }
+      }
+      &-body {
+        position: absolute;
+        width: 25vw;
+        top: 54%;
+        left: 18%;
+        @media only screen and (max-width: $bp-largest) {
+          top: 60%;
+          width: 50vw;
+        }
+        @media only screen and (max-width: $bp-mid) {
+          width: 65vw;
+          top: 75%;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+          width: 70vw;
+          top: 70%;
+        }
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    left: 70%;
+    top: 23%;
+
+    @media only screen and (max-width: $bp-mid) {
+      left: -0.5%;
+      top: 17%;
+    }
+    &-img {
+      width: 30vw;
+      height: 70vh;
+      @media only screen and (max-width: $bp-mid) {
+        height: 25vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}

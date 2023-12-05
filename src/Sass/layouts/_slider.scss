@@ -1,0 +1,94 @@
+.testimonial {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  @media only screen and (max-width: $bp-mid) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column-reverse;
+  }
+  &__elements {
+    display: grid;
+    grid-template-columns: 3fr;
+    min-width: 30vw;
+    position: relative;
+    left: 15%;
+    top: -20%;
+    &-text {
+      color: var(--color-primary-2);
+      font-family: Barlow;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px;
+      min-width: none;
+      width: 30vw;
+      position: absolute;
+      top: 35%;
+      // margin-top: 2rem;
+      @media only screen and (max-width: $bp-largest) {
+        width: 50vw;
+        top: 15%;
+      }
+      @media only screen and (max-width: $bp-mid) {
+        width: 70vw;
+        text-align: center;
+        margin-top: 14rem;
+      }
+      @media only screen and (max-width: $bp-small) {
+        width: 70vw;
+        text-align: center;
+        margin-top: 3rem;
+      }
+    }
+    &-names {
+      display: grid;
+      grid-template-columns: 2fr;
+      position: relative;
+      @media only screen and (max-width: $bp-largest) {
+        top: -25%;
+      }
+    }
+  }
+  &__author {
+    position: relative;
+    top: -20%;
+    left: 15%;
+
+    @media only screen and (max-width: $bp-largest) {
+      margin-top: -19rem;
+      top: -10%;
+      left: 25%;
+    }
+    @media only screen and (max-width: $bp-mid) {
+      margin-left: 27rem;
+      margin-top: 43rem;
+      left: -10%;
+      align-items: center;
+      text-align: center;
+    }
+    @media only screen and (max-width: $bp-small) {
+      // margin-left: 27rem;
+      // margin-top: -5rem;
+      left: -20%;
+      position: relative;
+      top: -20%;
+      margin-top: -13rem;
+      margin-bottom: 15rem;
+      border-bottom: 2px solid var(--color-primary-1);
+    }
+    &-image {
+      height: 80vh;
+      width: 30vw;
+      @media only screen and (max-width: $bp-mid) {
+        height: 45vh;
+        width: 35vw;
+      }
+      @media only screen and (max-width: $bp-small) {
+        height: 35vh;
+        width: 30vw;
+      }
+    }
+  }
+}

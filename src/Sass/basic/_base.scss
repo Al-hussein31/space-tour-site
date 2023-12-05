@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400&family=Bellefair&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  // @media only screen and (max-width: $bp-largest) {
+  //   font-size: 75%;
+  // }
+  @media only screen and (max-width: $bp-largest-1) {
+    font-size: 50%;
+  }
+}
+body {
+  box-sizing: border-box;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: var(--color-black);
+  font-family: $font-primary;
+  @media only screen and (max-width: $bp-largest-1) {
+    overflow-y: hidden;
+  }
+  @media only screen and (max-width: $bp-large) {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+::selection {
+  background-color: var(--color-black);
+  opacity: 0.333;
+  color: var(--color-primary);
+}

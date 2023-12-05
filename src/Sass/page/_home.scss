@@ -1,0 +1,212 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  margin-top: 15rem;
+  @media only screen and (max-width: $bp-large) {
+    margin-top: 30rem;
+  }
+  @media only screen and (max-width: $bp-mid) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 4rem;
+    margin-top: 20rem;
+  }
+
+  &__text-box {
+    width: 30vw;
+    // padding: 5rem;
+    display: grid;
+    grid-template-columns: 3fr;
+    gap: 2rem;
+
+    position: relative;
+    left: 10%;
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 50vw;
+      left: 5%;
+      text-align: center;
+    }
+    @media only screen and (max-width: $bp-mid) {
+      width: 70vw;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 75vw;
+      left: 0%;
+    }
+  }
+
+  &__img-box {
+    width: 40vw;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-left: 8rem;
+
+    &-image {
+      position: relative;
+      top: -10%;
+      width: 2rem;
+    }
+  }
+
+  &__links {
+    text-transform: uppercase;
+    position: relative;
+    left: 11%;
+    top: -30%;
+
+    &-link {
+      color: var(--color-primary);
+      font-family: Barlow Condensed;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 2.7px;
+      text-decoration: none;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+      &:hover {
+        transition: all 0.3s;
+        border-bottom: 3px solid var(--color-primary-1-hover);
+      }
+
+      &-active {
+        border-bottom: 3px solid var(--color-primary);
+        &:hover {
+          border-bottom: 3px solid var(--color-primary);
+        }
+      }
+    }
+  }
+  &__duty {
+    &-text {
+      color: var(--color-primary-3);
+      font-family: $font-secondary;
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      position: absolute;
+      left: 28%;
+      @media only screen and (max-width: $bp-mid) {
+        top: 45%;
+        left: 34%;
+      }
+      @media only screen and (max-width: $bp-small) {
+        left: 29%;
+      }
+    }
+  }
+}
+.section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  @media only screen and (max-width: $bp-mid) {
+    display: flex;
+    flex-direction: column;
+  }
+  &__image {
+    width: 25vw;
+    position: relative;
+    left: 30%;
+    top: -10%;
+    @media only screen and (max-width: $bp-largest) {
+      top: -25%;
+    }
+    @media only screen and (max-width: $bp-mid) {
+      width: 45vw;
+      left: 30%;
+      top: -10%;
+    }
+    @media only screen and (max-width: $bp-small) {
+      // width: 45vw;
+      // left: 30%;
+      top: -25%;
+    }
+  }
+
+  &__text-box {
+    width: 30vw;
+    position: relative;
+    left: 10%;
+    top: -15%;
+
+    @media only screen and (max-width: $bp-largest) {
+      top: -30%;
+    }
+    @media only screen and (max-width: $bp-mid) {
+      margin-top: 8rem;
+      width: 60vw;
+      margin-left: 6rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 5rem;
+      width: 70vw;
+      margin-left: 0rem;
+    }
+  }
+
+  &__links {
+    text-transform: uppercase;
+    position: relative;
+    left: 11%;
+    margin-bottom: 2rem;
+    width: 60vw;
+    @media only screen and (max-width: $bp-largest) {
+      margin-bottom: 1rem;
+    }
+    @media only screen and (max-width: $bp-mid) {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 70vw;
+    }
+    &-link {
+      color: var(--color-primary);
+      font-family: Barlow Condensed;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 2.7px;
+      text-decoration: none;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+      &:hover {
+        transition: all 0.3s;
+        border-bottom: 3px solid var(--color-primary-1-hover);
+      }
+
+      &-active {
+        border-bottom: 3px solid var(--color-primary);
+        &:hover {
+          border-bottom: 3px solid var(--color-primary);
+        }
+      }
+    }
+  }
+
+  &__duty {
+    &-text {
+      color: var(--color-primary-3);
+      font-family: $font-secondary;
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      position: absolute;
+      left: 29%;
+    }
+  }
+}

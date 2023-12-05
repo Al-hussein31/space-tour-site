@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../Images/shared/logo.svg"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/Sass/main.scss" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <header class="header-technology">
+      <nav class="nav">
+        <div class="nav__elements nav-icon">
+          <img src="../Images/shared/logo.svg" alt="" class="nav-icon icon" />
+        </div>
+
+        <input type="checkbox" class="nav__checkbox" id="navi-toggle" />
+
+        <label for="navi-toggle" class="nav__button">
+          <span class="nav__icon">&nbsp;</span>
+        </label>
+
+        <div class="nav__elements-line"></div>
+        <div class="nav__elements nav__links">
+          <div class="nav__links-link">
+            <a class="nav__links-link-num" href="index.html">00</a>
+
+            <a class="nav__links-link-text" href="index.html">Home</a>
+          </div>
+          <div class="nav__links-link">
+            <a href="destination-moon.html" class="nav__links-link-num">01</a>
+            <a href="destination-moon.html" class="nav__links-link-text"
+              >Destination</a
+            >
+          </div>
+          <div class="nav__links-link">
+            <a href="crew-commander.html" class="nav__links-link-num">02</a>
+            <a href="crew-commander.html" class="nav__links-link-text">Crew</a>
+          </div>
+          <div class="nav__links-link nav__links-link--active">
+            <a href="technology-capsule.html" class="nav__links-link-num">03</a>
+            <a href="technology-capsule.html" class="nav__links-link-text"
+              >Technology</a
+            >
+          </div>
+        </div>
+      </nav>
+      <main class="main">
+        <div class="main__img-box">
+          <h2 class="header-secondary-2">
+            <span class="header-secondary-2-num">03</span>
+            <span class="header-secondary-2-text">SPACE LAUNCH 101</span>
+          </h2>
+        </div>
+      </main>
+
+      <section class="technology">
+        <div class="technology__texts">
+          <div class="technology__texts-numbers">
+            <a href="technology-vehicle.html" class="numbers numbers--text"
+              >1</a
+            >
+            <a href="technology-spaceport.html" class="numbers numbers--text"
+              >2</a
+            >
+            <a
+              href="technology-capsule.html"
+              class="numbers numbers--text numbers-active"
+              >3</a
+            >
+          </div>
+          <div class="technology__texts-text">
+            <div class="technology__texts-text-subhead">The terminology...</div>
+            <div class="technology__texts-text-head">Space capsule</div>
+            <p class="technology__texts-text-body paragraph">
+              A space capsule is an often-crewed spacecraft that uses a
+              blunt-body reentry capsule to reenter the Earth's atmosphere
+              without wings. Our capsule is where you'll spend your time during
+              the flight. It includes a space gym, cinema, and plenty of other
+              activities to keep you entertained.
+            </p>
+          </div>
+        </div>
+        <div class="technology__image">
+          <img
+            src="/Images/technology/image-space-capsule-portrait.jpg"
+            alt="Space capsule"
+            class="technology__image-img"
+          />
+        </div>
+      </section>
+    </header>
+    <!-- 
+  The terminology...
+  Space capsule
+
+  A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+  capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+  you'll spend your time during the flight. It includes a space gym, cinema, 
+  and plenty of other activities to keep you entertained. -->
+  </body>
+</html>

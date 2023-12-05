@@ -1,0 +1,22 @@
+:root {
+  --color-primary: #ffff;
+  --color-primary-1: rgba(255, 255, 255, 0.04);
+  --color-primary-1-hover: rgba(255, 255, 255, 0.5);
+  --color-primary-2: #d0d6f9;
+
+  --color-primary-3: #0b0d17;
+  --color-primary-3: #383b4b;
+  --color-black: #000;
+}
+
+$font-primary: 'Barlow Condensed', sans-serif;
+$font-secondary: 'Bellefair', serif;
+
+$color-black: rgba(255, 255, 255, 0.04);
+
+$bp-largest-1: 1440px;
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em; //1100px
+$bp-mid: 56.25em; //900px
+$bp-small: 37.5em; //600px
+$bp-bit: 31.25em; //500px

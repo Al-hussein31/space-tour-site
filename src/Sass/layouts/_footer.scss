@@ -1,0 +1,99 @@
+.footer {
+  border-top: 2px solid var(--color-primary-1);
+
+  position: relative;
+  left: 10%;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  @media only screen and (max-width: $bp-mid) {
+    margin-top: 5rem;
+    justify-items: center;
+  }
+
+  @media only screen and (max-width: $bp-bit) {
+    grid-template-columns: 2fr;
+    width: 85vw;
+    margin-left: -5rem;
+  }
+  &__distance {
+    margin-top: 0.5rem;
+    text-align: start;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr;
+    gap: 1rem;
+    @media only screen and (max-width: $bp-mid) {
+      margin-top: 6rem;
+    }
+    @media only screen and (max-width: $bp-bit) {
+      margin-top: 3rem;
+    }
+
+    &-avg {
+      color: var(--color-primary-2);
+      font-family: $font-primary;
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 2.362px;
+      text-transform: uppercase;
+      @media only screen and (max-width: $bp-mid) {
+        // width: 30vw;
+        text-align: center;
+      }
+    }
+    &-meter {
+      color: var(--color-primary);
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      font-family: $font-secondary;
+      @media only screen and (max-width: $bp-mid) {
+        width: 40vw;
+        text-align: center;
+        font-size: 4rem;
+      }
+    }
+  }
+  &__days {
+    margin-top: 0.5rem;
+    text-align: start;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr;
+    @media only screen and (max-width: $bp-mid) {
+      margin-top: 5rem;
+    }
+    &-time {
+      color: var(--color-primary-2);
+      font-family: $font-primary;
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 2.362px;
+      text-transform: uppercase;
+      @media only screen and (max-width: $bp-mid) {
+        text-align: center;
+      }
+    }
+    &-day {
+      color: var(--color-primary);
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      font-family: $font-secondary;
+      @media only screen and (max-width: $bp-mid) {
+        width: 40vw;
+        text-align: center;
+        font-size: 4rem;
+      }
+    }
+  }
+}
