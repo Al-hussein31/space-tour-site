@@ -541,7 +541,7 @@ body {
 @media only screen and (width <= 37.5em) {
   .header-crew {
     background: url("background-crew-mobile.62ee695e.fe9f304e.jpg") 0 0 / cover no-repeat;
-    height: 125vh;
+    height: 140vh;
   }
 }
 
