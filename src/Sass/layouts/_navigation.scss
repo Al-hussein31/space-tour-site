@@ -139,7 +139,7 @@
         transition: all 0.3s;
       }
       @media only screen and (max-width: $bp-large) {
-        left: 12%;
+        // left: 12%;
         width: 7rem;
       }
 
@@ -147,6 +147,7 @@
         top: -500%;
         width: 10rem;
         min-height: 6rem;
+        left: 0%;
       }
       &--active {
         border-bottom: 3px solid var(--color-primary);

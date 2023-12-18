@@ -3,13 +3,13 @@
 
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 120vh;
 
   @media only screen and (max-width: $bp-mid) {
     background: url(../../Images/home/background-home-tablet.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 125vh;
   }
 
   @media only screen and (max-width: $bp-bit) {
