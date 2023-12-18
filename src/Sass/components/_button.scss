@@ -12,6 +12,7 @@
     position: relative;
     left: 40%;
     // top: 20%;
+    margin-top: 10rem;
     cursor: pointer;
     @media only screen and (max-width: $bp-largest) {
       top: 10%;
@@ -19,7 +20,7 @@
     }
 
     @media only screen and (max-width: $bp-mid) {
-      margin-top: 15rem;
+      margin-top: 12rem;
       width: 41rem;
       height: 40rem;
     }
@@ -39,6 +40,9 @@
     &::after {
       transform: scaleX(1.6) scaleY(1.6);
       opacity: 0.1036;
+      @media only screen and (max-width: $bp-mid) {
+        transform: scaleX(1.4) scaleY(1.4);
+      }
     }
   }
   &:active,
@@ -89,8 +93,17 @@
   display: flex;
 
   @media only screen and (max-width: $bp-mid) {
-    bottom: 47%;
+    // bottom: 47%;
     left: 50%;
+    width: 10rem;
+    height: 4rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    margin-bottom: 16rem;
   }
 
   &__dot {

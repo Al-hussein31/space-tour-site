@@ -14,7 +14,9 @@
     min-width: 30vw;
     position: relative;
     left: 15%;
-    top: -20%;
+    // top: -20%;
+    margin-top: 6rem;
+    // gap: 5rem;
     &-text {
       color: var(--color-primary-2);
       font-family: Barlow;
@@ -25,7 +27,8 @@
       min-width: none;
       width: 30vw;
       position: absolute;
-      top: 35%;
+      // top: 35%;
+      margin-top: 4rem;
       // margin-top: 2rem;
       @media only screen and (max-width: $bp-largest) {
         width: 50vw;
@@ -34,20 +37,31 @@
       @media only screen and (max-width: $bp-mid) {
         width: 70vw;
         text-align: center;
-        margin-top: 14rem;
+        margin-top: 6rem;
       }
       @media only screen and (max-width: $bp-small) {
         width: 70vw;
         text-align: center;
-        margin-top: 3rem;
+        margin-top: 4rem;
       }
     }
     &-names {
       display: grid;
       grid-template-columns: 2fr;
       position: relative;
+      margin-top: -20rem;
       @media only screen and (max-width: $bp-largest) {
-        top: -25%;
+        // top: -25%;
+        margin-top: -20rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        // top: -25%;
+        margin-top: -4rem;
+      }
+      @media only screen and (max-width: $bp-bit) {
+        // top: -25%;
+        // margin-top: 10rem;
       }
     }
   }
@@ -57,9 +71,8 @@
     left: 15%;
 
     @media only screen and (max-width: $bp-largest) {
-      margin-top: -19rem;
-      top: -10%;
       left: 25%;
+      margin-top: -16rem;
     }
     @media only screen and (max-width: $bp-mid) {
       margin-left: 27rem;
