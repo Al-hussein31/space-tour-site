@@ -473,14 +473,14 @@ body {
 @media only screen and (width <= 56.25em) {
   .header {
     background: url("background-home-tablet.85137cc9.jpg") 0 0 / cover no-repeat;
-    height: 100vh;
+    height: 100%;
   }
 }
 
 @media only screen and (width <= 31.25em) {
   .header {
     background: url("background-home-mobile.1eaff1cf.jpg") 0 0 / cover no-repeat;
-    height: 100vh;
+    height: 100%;
   }
 }
 
@@ -492,14 +492,13 @@ body {
 @media only screen and (width <= 56.25em) {
   .header-destination {
     background: url("background-destination-tablet.f962b127.jpg") 0 0 / cover no-repeat;
-    height: 100vh;
+    height: 100%;
   }
 }
 
 @media only screen and (width <= 31.25em) {
   .header-destination {
     background: url("background-destination-mobile.82afa590.jpg") 0 0 / cover no-repeat;
-    height: 100vh;
   }
 }
 
@@ -511,14 +510,14 @@ body {
 @media only screen and (width <= 56.25em) {
   .header-crew {
     background: url("background-crew-tablet.ee1fcc0c.jpg") 0 0 / cover no-repeat;
-    height: 100vh;
+    height: 100%;
   }
 }
 
 @media only screen and (width <= 37.5em) {
   .header-crew {
     background: url("background-crew-mobile.62ee695e.jpg") 0 0 / cover no-repeat;
-    height: 100vh;
+    height: 125vh;
   }
 }
 
@@ -530,14 +529,14 @@ body {
 @media only screen and (width <= 56.25em) {
   .header-technology {
     background: url("background-technology-tablet.692d0435.jpg") 0 0 / cover no-repeat;
-    height: 100vh;
+    height: 100%;
   }
 }
 
 @media only screen and (width <= 31.25em) {
   .header-technology {
     background: url("background-technology-mobile.4cbe90fd.jpg") 0 0 / cover no-repeat;
-    height: 100vh;
+    height: 100%;
   }
 }
 

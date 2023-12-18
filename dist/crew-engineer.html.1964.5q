@@ -11,7 +11,7 @@
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
-    <header class="header-crew">
+    <header class="header-destination">
       <nav class="nav">
         <div class="nav__elements nav-icon">
           <img src="/logo.bb4ca458.svg" alt="" class="nav-icon icon">
@@ -22,7 +22,6 @@
         <label for="navi-toggle" class="nav__button">
           <span class="nav__icon">&nbsp;</span>
         </label>
-
         <div class="nav__elements-line"></div>
         <div class="nav__elements nav__links">
           <div class="nav__links-link">
@@ -35,8 +34,8 @@
             <a href="/destination-moon.html" class="nav__links-link-text">Destination</a>
           </div>
           <div class="nav__links-link nav__links-link--active">
-            <a href="/crew-pilot.html" class="nav__links-link-num">02</a>
-            <a href="/crew-pilot.html" class="nav__links-link-text">Crew</a>
+            <a href="/crew-engineer.html" class="nav__links-link-num">02</a>
+            <a href="/crew-engineer.html" class="nav__links-link-text">Crew</a>
           </div>
           <div class="nav__links-link">
             <a href="/technology-vehicle.html" class="nav__links-link-num">03</a>
@@ -58,19 +57,19 @@
           <div class="testimonial">
             <div class="testimonial__elements">
               <div class="testimonial__elements-names">
-                <span class="role">Pilot</span>
-                <span class="name"> Victor Glover</span>
+                <span class="role">Flight Engineer</span>
+                <span class="name"> Anousheh Ansari</span>
               </div>
               <blockquote class="testimonial__elements-text">
-                Pilot on the first operational flight of the SpaceX Crew Dragon
-                to the International Space Station. Glover is a commander in the
-                U.S. Navy where he pilots an F/A-18.He was a crew member of
-                Expedition 64, and served as a station systems flight engineer.
+                Anousheh Ansari is an Iranian American engineer and co-founder
+                of Prodea Systems. Ansari was the fourth self-funded space
+                tourist, the first self-funded woman to fly to the ISS, and the
+                first Iranian in space.
               </blockquote>
             </div>
 
             <figure class="testimonial__author">
-              <img src="/image-victor-glover.1487caa8.png" data-src="../Images/crew/image-victor-glover.png" alt="Victor Glover" class="testimonial__author-image lazy-img">
+              <img src="/image-anousheh-ansari.ce924e91.png" data-src="../Images/crew/image-anousheh-ansari.png" alt="Anousheh Ansari" class="testimonial__author-image lazy-img">
             </figure>
           </div>
         </div>
@@ -78,11 +77,11 @@
         <div class="dots">
           <a href="/crew-commander.html" class="dots__dot"></a>
           <a href="/crew-specialist.html" class="dots__dot"></a>
-          <a href="/crew-pilot.html" class="dots__dot dots__dot--active"></a>
-          <a href="/crew-engineer.html" class="dots__dot"></a>
+          <a href="/crew-pilot.html" class="dots__dot"></a>
+          <a href="/crew-engineer.html" class="dots__dot dots__dot--active"></a>
         </div>
       </div>
     </header>
     <script src="/destination-moon.c4546ecb.js"></script>
-  <script src="/crew-pilot.25388390.js"></script></body>
+  <script src="/crew-engineer.1c20639f.js"></script></body>
 </html>
