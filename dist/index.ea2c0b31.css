@@ -486,26 +486,31 @@ body {
 
 .header {
   background: url("background-home-desktop.6734a6ee.jpg") 0 0 / cover no-repeat;
-  height: 120vh;
+  height: 135vh;
+}
+
+@media only screen and (width <= 68.75em) {
+  .header {
+    background: url("background-home-tablet.85137cc9.jpg") 0 0 / cover no-repeat;
+  }
 }
 
 @media only screen and (width <= 56.25em) {
   .header {
     background: url("background-home-tablet.85137cc9.jpg") 0 0 / cover no-repeat;
-    height: 125vh;
+    height: 100%;
   }
 }
 
 @media only screen and (width <= 31.25em) {
   .header {
     background: url("background-home-mobile.1eaff1cf.jpg") 0 0 / cover no-repeat;
-    height: 100%;
   }
 }
 
 .header-destination {
   background: url("background-destination-desktop.6e2df832.jpg") 0 0 / cover no-repeat;
-  height: 100vh;
+  height: 100%;
 }
 
 @media only screen and (width <= 56.25em) {
@@ -1320,7 +1325,7 @@ body {
 
 @media only screen and (width <= 56.25em) {
   .technology__texts-numbers {
-    margin-top: 70rem;
+    margin-top: 60rem;
     display: flex;
     position: relative;
     left: 20%;
